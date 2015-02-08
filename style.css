@@ -1,0 +1,30 @@
+
+body {
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;/*#0c0c0c;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.word {
+   color: #DF2626;
+}
+.word:hover, .word.selected {
+    color: blue;
+    cursor: pointer;
+}
+.word.sync {
+	background-color: yellow;
+} 
+
+audio {
+	width: 100%;
+	}
+.kstart {
+	color: #ccc;
+	padding-left: 20px;
+}
+.kend {
+	color: #ccc;
+}
