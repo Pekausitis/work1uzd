@@ -173,12 +173,13 @@ function gen() {
 
 
 	
-        var output="<div>";
+       var output="<div>";
 		var c = 1;
+		var w = 1;
 	for (var j in data.audio){
 	    output+="<audio class='file' id='F_"+ c++ +"' src='"+data.audio[j].path+"' controls></audio><div class='text'>";
 	    for (var i in data.audio[j].transcription) {
-		 output+="<span class='word' ' title='@start="+data.audio[j].transcription[i].start+" @end="+data.audio[j].transcription[i].end+"' data-start='"+data.audio[j].transcription[i].start+"' data-end='"+ data.audio[j].transcription[i].end+"'> "+data.audio[j].transcription[i].word+"</span>";
+		 output+="<span class='word' id='W_"+ w++ +"' ' title='@start="+data.audio[j].transcription[i].start+" @end="+data.audio[j].transcription[i].end+"' data-start='"+data.audio[j].transcription[i].start+"' data-end='"+ data.audio[j].transcription[i].end+"'> "+data.audio[j].transcription[i].word+"</span>";
 		
        	    }
 	    	}
